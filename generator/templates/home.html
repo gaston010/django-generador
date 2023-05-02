@@ -5,7 +5,13 @@
     <form action="password" class="card card-body p-5 " style="background-color: #121212;">
         <h1 class="h4">Password Generator</h1>
 
-        <label for="length">Selecto the lengh of yout password</label>
+        <label for="length">Selec to the lengh of yout password</label>
+        
+        <div class="form-check form-switch my-2">
+            <label for="tleng">Suggestion</label>
+            <input type="checkbox" name="suggestion" id="suggestion" class="form-check-input">
+
+        </div>
         <select name="length" id="length" class="form-control">
             <option value="6">6 character</option>
             <option value="8">8 character</option>
@@ -31,5 +37,7 @@
         </div>
         <button class="btn btn-primary">Generate Password</button>
     </form>
+    
 </div>
+
 {% endblock %}
