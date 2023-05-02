@@ -22,3 +22,4 @@ def password(request):
         generated_password += rd.choice(characters)
 
     return render(request, 'password.html', {'password': generated_password})
+
